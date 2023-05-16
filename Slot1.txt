@@ -1,0 +1,10 @@
+OOP(lập trình hướng đối tượng): chương trình được tổ chức xung quanh đối tượng.
+	- Một đối tượng phải có thuộc tính rõ ràng được định nghĩa.
+	-Nhiều cái method riêng
+- GET/SET:
+	+ GET: Dùng để lấy giá trị ra
+	+ SET: Sửa giá trị của object
+- Practice: 
+	+ Tạo môt điểm trên đồ thị ví dụ A(x,y)
+	+ Cho điểm A(3,4) in ra màn hình
+https://drive.google.com/drive/folders/1D41rjzBtyCm0BV-1MuEbHM-_vJjFC5S0?usp=sharing
