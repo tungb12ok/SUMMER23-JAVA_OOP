@@ -69,7 +69,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" + "code=" + code + ", name=" + name + ", classes=" + classes + ", gender=" + gender + ", address=" + address + '}';
+        String rls = gender ?  "Male" : "Female" ;
+        return String.format("%-15s%-15s%-15s%-15s%-15s", code, name, classes, rls, address);
     }
 
 }

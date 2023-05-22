@@ -39,8 +39,22 @@ public class Validation {
         }
     }
 
+    public int checkIntLimit(String mess, int min, int max) {
+        while (true) {
+            try {
+                int input = Integer.parseInt(sc.nextLine());
+                if(input>=min  && input<=max){
+                    return input;
+                }else{
+                    System.out.println("Input must be in range "+ min + "-> "+max);
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+
     public Double checkDouble(String mess) {
-        System.out.println(mess);
         while (true) {
             try {
                 Double input = Double.parseDouble(sc.nextLine());
@@ -51,4 +65,17 @@ public class Validation {
         }
     }
 
+    public boolean checkGender(String mess) {
+        while (true) {
+            String gender = checkEmpty(mess);
+            if (gender.equalsIgnoreCase("male")) {
+                return true;
+            }
+            if (gender.equalsIgnoreCase("female")) {
+                return false;
+            } else {
+                System.err.println("Input must be only male or female!");
+            }
+        }
+    }
 }
